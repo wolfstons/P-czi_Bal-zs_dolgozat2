@@ -17,8 +17,8 @@ def paratlanok_szama(szamsorozat):
     i=0
     while i<len(szamsorozat):
         i+=1
-        valtozo=szamsorozat[i]/2
-        if szamsorozat[i]/2==1:
+
+        if szamsorozat[i-1]%2!=0:
             paratlanok_szama+=1
     return paratlanok_szama
 
@@ -26,11 +26,12 @@ def paratlanok_szama(szamsorozat):
 def konzol_kiir(paratlanok_szama):
     print("II/D,E:")
     print(f"\tA páratlanok száma: {paratlanok_szama}")
+    return paratlanok_szama
 
 
-def fajlba_kiir():
+def fajlba_kiir(paratlanok_szama):
     f=open("eredmeny.txt","w",encoding="UTF-8")
-    f.write
-    
+    f.write(f"\tA páratlanok száma: {paratlanok_szama}")
+    f.close()
     
     
