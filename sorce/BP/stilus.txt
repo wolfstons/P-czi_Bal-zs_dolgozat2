@@ -1,0 +1,6 @@
+szövegkék #456280
+háttérkék #506a85
+világoskék #7893ae
+háttérkrém #cfc6b5
+világoskrém #dad5ca
+fehéreskrém #f3efe9
